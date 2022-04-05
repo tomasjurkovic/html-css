@@ -1,0 +1,324 @@
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px #1098ad solid;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 18px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* footer {
+  background-color: #f7f7f7;
+} */
+
+.main_header {
+  background-color: #f7f7f7;
+  /* first is for top and bottom and last is left and right. */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+.post_header {
+  margin-bottom: 40px;
+}
+
+/* smaller elements */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+/* hashcode selector using id */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.author_image {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  background-color: yellowgreen;
+  width: 800px;
+  float: left;
+}
+
+aside {
+  background-color: darkgreen;
+  float: right;
+  border-top:
+  box-sizing: border-box;
+}
+
+footer {
+  float: both;
+  background-color: blue;
+}
+
+/* descending selectors 
+footer p {
+  font-size: 16px;
+}
+*/
+#copyright {
+  font-size: 16px;
+}
+
+/* this is using class, so there is a dot */
+.related_author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #1098ad;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+h4,
+li {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}
+
+/* Just first line of p after h3 changes color to blue
+h3 + p::first-line {
+  color: #1098ad;
+} */
+
+ul {
+  list-style-type: none;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.list_item {
+  margin-bottom: 10px;
+}
+
+.list_item:last-child {
+  margin-bottom: 0;
+}
+
+.button-like:hover {
+  background-color: #444;
+  color: #f7f7f7;
+}
+
+.button-like {
+  border-radius: 15px;
+  border: #1098ad 2px solid;
+  background-color: #f7f7f7;
+  padding: 5px;
+  margin: 1px;
+}
+
+.main-headline::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+.related {
+  border-top: 7px #1098ad solid;
+  border-bottom: 7px #1098ad solid;
+  padding: 50px 40px;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.related_images {
+  border-radius: 50px;
+  border: #1098ad 2px solid;
+  margin-top: 10px;
+}
+
+/* .first_in_list {
+  font-weight: bold;
+} */
+
+/* li:nth-child(even) {
+  font-weight: bold;
+  color: sienna;
+} */
+
+article {
+  margin-bottom: 60px;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a {
+  color: red;
+}
+
+.post_image {
+  /* if there is 100%, it covers whole page width (body in this time) 
+  and if height is auto it is responsive when page size changes*/
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.menu {
+  text-align: center;
+  color: s;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.button-like {
+  padding: 20px;
+  cursor: pointer;
+  font-size: 22px;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* a:active {
+  font-style: italic;
+  background-color: black;
+} */
+/* 
+h1,.headline {
+  color: red;
+} */
+
+/* Resolving conflicts */
+/* #copyright {
+  color: #070707;
+} */
+
+/* .copyright {
+  color: blue;
+}
+
+.footer_text {
+  color: yellow;
+} */
+
+/* do not use important at all, it will apply, but it is horribles
+footer p {
+  color: yellowgreen !important;
+} */

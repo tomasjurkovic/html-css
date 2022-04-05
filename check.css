@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all_together {
+  display: inline-block;
+}
+
+.all_left {
+  float: left;
+  width: 240px;
+  margin-right: 50px;
+}
+
+.all_center {
+  float: both;
+  width: 240px;
+  margin-right: 50px;
+}
+
+.all_right {
+  float: right;
+  width: 240px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.product {
+  border: black 5px solid;
+}
+
+/* .product_info {
+  margin-left: 5px;
+} */
+
+header {
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+/* product information */
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.details:link,
+details:visited {
+  color: black;
+}
+
+.details:hover,
+details:active {
+  text-decoration: none;
+}
+
+.transport_info {
+  color: #777;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.transport_info,
+.heading,
+.product_details,
+.button {
+  text-transform: uppercase;
+}
+
+/* Product details */
+.product_details {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.description {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.details_link {
+  margin-bottom: 5px;
+}
+
+/* Button */
+.button {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  border-top: 5px #000 solid;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.product_image,
+.product_details,
+li,
+p {
+  margin-bottom: 10px;
+}
+
+.sale {
+  text-transform: uppercase;
+  background-color: red;
+  padding: 7px 15px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: -17px;
+  left: -34px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.available_colors {
+  display: inline-block;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.color_1 {
+  color: #000;
+}
+
+.color_2 {
+  color: #2f6ee2;
+}
+
+.color_3 {
+  color: #ec2f2f;
+}
+
+.color_4 {
+  color: #f0bf1e;
+}
+
+.color_5 {
+  color: #90cc20;
+}
+
+.color_6 {
+  color: #885214;
+}
